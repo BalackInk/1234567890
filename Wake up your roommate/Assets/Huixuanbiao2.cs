@@ -4,42 +4,38 @@ using UnityEngine;
 
 public class Huixuanbiao2 : MonoBehaviour {
 
-    //public GameObject HXBbiu;
-    GameObject camera;
-    //public GameObject You;
-    //public GameObject roommate;
-    //Transform Youtrans;
-    //Rigidbody2D HXBrig;
-    //ransform roomtrans;
-
-	// Use this for initialization
-	void Start () {
-        //HXBbiu.SetActive(false);
-        //Youtrans = You.GetComponent<Transform>();
-        //HXBrig = GetComponent<Rigidbody2D>();
-        //roomtrans = roommate.GetComponent<Transform>();
-        camera = GameObject.Find("Main Camera");
+GameObject ccamera;
+    public GameObject You;
+    public GameObject roommate;
+    Vector3 dir;
+   	void Start () {
+        
+        ccamera = GameObject.Find("Main Camera");
+        Vector3 chushi;
+        dir = roommate.transform.position - transform.position; 
+        GetComponent<Rigidbody2D>().velocity = dir ;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown("1"))
-            SETA();
+       
+           
         gameObject.transform.Rotate(new Vector3(0, 0, 5));
-        /*if (Input.GetKeyDown("1"))
-        {
-            HXBbiu.transform.localScale = Youtrans.localScale;
-            //gameObject.SetActive(true);
-            SETA();
-            Vector2 dir = roomtrans.position - gameObject.transform.position;
-            float a;
-            a = 1 / dir.magnitude;
-                HXBrig.velocity = dir * a;
-        }*/
-        Debug.Log(camera.GetComponent<Camera>().WorldToScreenPoint(gameObject.transform.position));
+                
+
+        
+
+
+        
+        //Debug.Log(ccamera.GetComponent<Camera>().WorldToScreenPoint(gameObject.transform.position));
     }
-    void SETA()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        //HXBbiu.SetActive(true);
+        if (collision.name == "roommate")
+        {
+            Debug.Log(1111);
+            GetComponent<Rigidbody2D>().velocity = -dir;
+            Debug.Log(GetComponent<Rigidbody2D>().velocity);
+        }
     }
 }

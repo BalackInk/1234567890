@@ -100,6 +100,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   youObj: {fileID: 1280968608815984}
+  HXB: {fileID: 1767981849604680, guid: bda4dab5d0ee12447aa1e6881911ae1d, type: 2}
+  tools: []
+  toolsI: []
+  toolsUI: []
+  haveTools: 
+  Hotkey: []
 --- !u!212 &212522355213295580
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212196373257699344}
   - component: {fileID: 60791329241492436}
   - component: {fileID: 114828947919931726}
+  - component: {fileID: 50385952649769576}
   m_Layer: 0
   m_Name: Huixuanbiao (1)
   m_TagString: Untagged
@@ -42,6 +43,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50385952649769576
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1767981849604680}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!60 &60791329241492436
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -90,6 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99212c29c17917f4a8f6d4363251c8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  You: {fileID: 1280968608815984, guid: 8d17d326393385b488b0301c111d250d, type: 2}
+  roommate: {fileID: 1982809572909896, guid: 761ef401750a3e245baf902190cfc48b, type: 2}
 --- !u!212 &212196373257699344
 SpriteRenderer:
   m_ObjectHideFlags: 1
