@@ -5,7 +5,13 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - youObj: {instanceID: 0}
+  - roommate: {instanceID: 0}
+  - TextTOOFAR: {instanceID: 0}
+  - WINORLOSE: {instanceID: 0}
+  - HXB: {instanceID: 0}
+  - JJJ: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

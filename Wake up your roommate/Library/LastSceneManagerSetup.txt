@@ -1,4 +1,4 @@
 sceneSetups:
-- path: D:/987654321/Unity/2dGameAI/Assets/Scene/leve2.unity
+- path: Assets/Wake up your roommate.unity
   isLoaded: 1
   isActive: 1

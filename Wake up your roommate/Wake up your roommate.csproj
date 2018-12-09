@@ -282,12 +282,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\bed.cs" />
     <Compile Include="Assets\Hammer.cs" />
     <Compile Include="Assets\Huixuanbiao.cs" />
     <Compile Include="Assets\Huixuanbiao2.cs" />
     <Compile Include="Assets\Jianjiaoji.cs" />
     <Compile Include="Assets\Needle.cs" />
-    <Compile Include="Assets\NewBehaviourScript.cs" />
+    <Compile Include="Assets\roommate.cs" />
     <Compile Include="Assets\Water.cs" />
     <Compile Include="Assets\You.cs" />
   </ItemGroup>

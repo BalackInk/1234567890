@@ -111,8 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99212c29c17917f4a8f6d4363251c8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  You: {fileID: 1280968608815984, guid: 8d17d326393385b488b0301c111d250d, type: 2}
-  roommate: {fileID: 1982809572909896, guid: 761ef401750a3e245baf902190cfc48b, type: 2}
+  You: {fileID: 0}
+  roommate: {fileID: 0}
 --- !u!212 &212196373257699344
 SpriteRenderer:
   m_ObjectHideFlags: 1
